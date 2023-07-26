@@ -53,9 +53,25 @@ while name != 'end':
     print('hi', name)
     name = input('your name? ')
 
-N=3
-while N>=0:
+N = 3
+while N >= 0:
     print(N)
-    N=N+1
-    if N==10:
+    N = N+1
+    if N == 10:
         break
+
+
+# first hw(wrong!)
+x = input('enter a number:')
+data=int(x)
+counter = 0
+while x != -1:
+    # data.append(x)
+    x = input('enter a number:')
+    if(x==-1):
+        break
+    else:
+        data=data+int(x)
+        print(data)
+        counter = counter+1
+print(data)
