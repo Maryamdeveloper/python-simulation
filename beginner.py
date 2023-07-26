@@ -4,7 +4,7 @@ age = input('your age: ')
 type(age)
 int(age)
 float(age)
-# a,b=6,7 #declare variables in one line
+a,b=6,7 #declare variables in one line
 A = 6
 B = 7
 print(A)
@@ -21,7 +21,7 @@ elif A % 2 == 0:
     print('it\'s even')
 else:
     print('it\'s small')
-# input()
+input()
 
 
 def salam(name):
@@ -31,12 +31,12 @@ def salam(name):
 salam('maryam')
 
 
-def sum(a, b):
+def sumTwo(a, b):
     return a+b
 
 
-sum(2, 5)
-print(sum(2, 5))
+sumTwo(2, 5)
+print(sumTwo(2, 5))
 
 
 def salary(hour, per_hour):
@@ -61,17 +61,16 @@ while N >= 0:
         break
 
 
-# first hw(wrong!)
-x = input('enter a number:')
-data=int(x)
-counter = 0
-while x != -1:
-    # data.append(x)
-    x = input('enter a number:')
-    if(x==-1):
+# first hw
+numbers = []
+while True:
+    value = int(input("Enter a number (-1 to stop): "))
+    if value == -1:
         break
-    else:
-        data=data+int(x)
-        print(data)
-        counter = counter+1
-print(data)
+    numbers.append(value)
+
+if len(numbers) > 0:
+    average = sum(numbers) / len(numbers)
+    print("Average:", average)
+else:
+    print("No numbers were entered.")
