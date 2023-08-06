@@ -25,15 +25,15 @@ else:
 input()
 
 
-def salam(name):
-    print('salam', name)
+def salam(namef):
+    print('salam', namef)
 
 
 salam('maryam')
 
 
-def sumTwo(a, b):
-    return a+b
+def sumTwo(asf, bsf):
+    return asf+bsf
 
 
 sumTwo(2, 5)
@@ -79,7 +79,7 @@ else:
 randNumber = random.randint(1, 99)
 guessedNumber = input('guess a number: ')
 while int(guessedNumber) != randNumber:
-    if (int(guessedNumber) > randNumber):
+    if int(guessedNumber) > randNumber:
         print('mine is smaller')
     else:
         print('mine is larger')
@@ -112,9 +112,9 @@ hi='salam'
 print(hi)
 print(hi[0])
 print(hi[4])
-len(hi) #length of string
+print(len(hi)) #length of string
 for i in range(0,len(hi)): #moving on string array method 1
-    print(i,a[i])
+    print(i,hi[i])
 count_a=0
 for letter in 'salam maryam': #moving on string array method 2
     print(letter)
@@ -122,3 +122,30 @@ for letter in 'salam maryam': #moving on string array method 2
         count_a=count_a+1
 
 print(count_a)
+
+s='man daram miram'
+print(s[:3]) #from start till s[2](s[3] not included)
+print(s[3:]) #from s[3] till end
+print(s[3:8]) #from s[3] till s[8]
+print(s[-1]) #the last item
+# s[0]='M' #want to change but wrong!!(py is not immutable) correct way👇
+s='M'+s[1:]
+
+# search a character
+print('a' in 'maria')
+print('am' in 'maria')
+print('b'>'B')
+print('mary'.upper())
+# list of available methods on specific type
+print(dir('mary'))
+print(help(str.count))
+print('mary'.count('y'))
+print('mary'.find('y'))
+print('maryam'.find('a',2)) #find a that are after 2nd position
+print('mary'.lower()) 
+print(' mary    '.strip()) #removes space and tabs from right&left
+print('mary'.startswith('b'))
+print('Mary'.startswith('M'))
+print('Mary'.lower().startswith('M'))
+REST_OF_NAME='am'
+print('Mary{%s} how are you? do you know you\'re %s years old!'%(REST_OF_NAME,age))
