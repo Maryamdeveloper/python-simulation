@@ -149,3 +149,6 @@ print('Mary'.startswith('M'))
 print('Mary'.lower().startswith('M'))
 REST_OF_NAME='am'
 print('Mary{%s} how are you? do you know you\'re %s years old!'%(REST_OF_NAME,age))
+
+myList=[4,5,1.5,-1,'jadi']
+myList2=[myList,4,[1,3]]
